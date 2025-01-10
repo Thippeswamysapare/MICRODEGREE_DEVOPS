@@ -59,3 +59,41 @@ Enter Token as password when prompt
 
 21. Push the code to Github
 git push origin Master
+
+------------------------------- STEPS TO PULL THE CODE FROM GITHUB ------------------------
+Pull the code from Github
+1. Create new EC2 instance
+2. Login to EC2 machine and switch to Root user
+3. apt update -y
+4. apt install git
+5. git --version
+6. Crate new directory [ mkdir dir02] then switch to new directory [cd dir02]
+7. configure the username and email
+    git config --global user.name "user-name"
+    git config --global user.email "email of user"
+
+8. View list of users
+    git config --list
+9. Initialize git   using git init [Logical separation will create]
+10. Establish connection from local repo to remote repo
+     git remote add origin <github URL>
+     git remote add origin https://github.com/Thippeswamysapare/MICRODEGREE_DEVOPS.git
+
+11. Pull the code from github
+     git pull origin master [ Code will pull from remote report to Local repo]
+12. list the file using ls -l/ls
+13. Git status [ Nothing to commit , working tree clean]
+14. Check the commit details using git log  [Display all the commits done]
+15. Edit the file using vi [when edit the file it will move to working area]
+16. Check the status using git status [ folder name displayed in red color]
+17. Add the file to staging area using  git add <file-name> OR git add .
+18. Git status [ Folder displayed in green color]
+19. Git commit -m "message" 
+20. Git status [ Nothing to commit, working tree clean]
+21. Git log [ Displayed new and old commit details]
+22. Git show <commit-Id>  [ Display content of the commit details]
+23. Push the code to Github
+     git push origin master
+    [prompted for username and Password(Token)]
+
+24. Goto Github and check the new changes [ New changes are showing in Git hub]
