@@ -1,0 +1,30 @@
+GIT 
+1. It is a version control system [VCS] or source code management [SCM]
+2. It is used for track the changes in files
+3. It is a platform independent
+4. It is free and open source
+5. They can handle large projects efficiently
+
+Git installation:
+Login to AWS and connect to EC2 machine.
+Install the git using  apt install git
+Create a new directory using mkdir dir-name
+Initialize the git using  git init  At this point logical separating will happened and working area, staging are and local repo were created
+
+Staging areas:
+Working space:  
+Generally working space is the space where developer write the code. In this stage git is only aware of having files in the project
+Staging area: It is an intermediate area between working space and local repo
+Local repo: In is an area where user can commit the code.
+
+Note:
+1.	When the code is added to staging area, user is allow to modify/edit the code
+2.	When code is committed to local repo, user is not allowed to modify the existing code
+
+Types of Repos:		   
+Local Repo   : A repository where user can create/modify/delete the files 
+Central Repo: A repository where all developers’ code is stored/pushed
+Remote Repo: A separate repository where user can store the code and shared with other developer without notice to all developers.
+
+Ex: dev1 want to share his code with dev-4 without notice to dev-2 and dev-3
+
