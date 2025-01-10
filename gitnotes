@@ -28,3 +28,34 @@ Remote Repo: A separate repository where user can store the code and shared with
 
 Ex: dev1 want to share his code with dev-4 without notice to dev-2 and dev-3
 
+--------------------------------- STEPS TO PUSH CODE TO GITHUB ---------------------------------
+Git Steps
+1. Launch the EC2 instance
+2. Login to root user ( sudo su -)
+3. Do apt update -y
+4. apt install git
+5. git --version
+6. Create new directory[ mkdir dir1]
+7. Switch to new directory [cd dir1]
+8. Configure the user using git config --global user.name "username"
+9. Configure the email using git config --global user.email "emaild of the user"
+10. git init [ Logical seperation will creates]
+11. Create new file using vi/cat/touch command [ cat > file01]
+12. Add content to the file then Save the file
+13. Check the file status using Git status [ file is in working area showing in red color ]
+14. Add file to the Staging area using Git add <file-name> [ Git add file01] 
+15. Check file status using Git status- File color showing as Green
+16. Commit the file using git commit -m "Message"  --> Once we commit the code a default branch will be created with name "Master"
+17. Check the file status using Git status --> Nothing to commit, working tree clean
+18. Check the commit details using Git log
+    Display the commit Id , username,email and branch name
+19. Check the content in committed file   git show <commit-Id>
+20. Establish a connection to Github
+git remote add origin master https://github.com/Thippeswamysapare/MICRODEGREE_DEVOPS.git
+
+Enter username when prompt 
+Enter Token as password when prompt
+[It will enable connection between local repo and central repo]
+
+21. Push the code to Github
+git push origin Master
